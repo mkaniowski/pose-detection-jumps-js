@@ -386,6 +386,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mediapipe/pose@npm:^0.5.1675469404":
+  version: 0.5.1675469404
+  resolution: "@mediapipe/pose@npm:0.5.1675469404"
+  checksum: e723b792232e20ec96d2462eee3228e157c5753afd9b69ce3e4da69d64044ac87957d63213f2c43a8b3c2700c6c142ebf14fae79c39ba72d42203bf9c4744ccf
+  languageName: node
+  linkType: hard
+
 "@npmcli/fs@npm:^2.1.0":
   version: 2.1.2
   resolution: "@npmcli/fs@npm:2.1.2"
@@ -522,6 +529,23 @@ __metadata:
     "@tensorflow/tfjs-converter": ^3.3.0
     "@tensorflow/tfjs-core": ^3.3.0
   checksum: 3ec4fade895a0151ac36db2086af4ac1dc957e2ac5b1b586a1c4182ba8f583f759bc82d093372a8731eb92dfb645ae3f3c471755b788e5e1ae9e2a66a4c6f942
+  languageName: node
+  linkType: hard
+
+"@tensorflow-models/pose-detection@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@tensorflow-models/pose-detection@npm:2.1.0"
+  dependencies:
+    rimraf: ^3.0.2
+    tslib: 2.4.0
+  peerDependencies:
+    "@mediapipe/pose": ~0.5.0
+    "@tensorflow/tfjs-backend-wasm": ^4.2.0
+    "@tensorflow/tfjs-backend-webgl": ^4.2.0
+    "@tensorflow/tfjs-backend-webgpu": ^0.0.1-alpha.17
+    "@tensorflow/tfjs-converter": ^4.2.0
+    "@tensorflow/tfjs-core": ^4.2.0
+  checksum: 96c2d6d431d865aa82f545fd2a58019d8771a17744610b2cc86a2670723f877964c89929a21b6a46c1751488ce87d7f243aa0dc0abbe0705ee24afa1e0f6ea00
   languageName: node
   linkType: hard
 
@@ -1840,15 +1864,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "pose-detection-jumps-js@workspace:."
   dependencies:
+    "@mediapipe/pose": ^0.5.1675469404
     "@tensorflow-models/coco-ssd": ^2.2.2
+    "@tensorflow-models/pose-detection": ^2.1.0
     "@tensorflow/tfjs": ^4.2.0
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     "@types/styled-components": ^5
     "@vitejs/plugin-react-swc": ^3.0.0
     react: ^18.2.0
-    react-camera: ^0.1.3
     react-dom: ^18.2.0
+    react-webcam: ^7.0.1
     styled-components: ^5.3.9
     tslib: ^2.5.0
     typescript: ^5.0.2
@@ -1891,15 +1917,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-camera@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "react-camera@npm:0.1.3"
-  peerDependencies:
-    react: ">= 0.11.2 < 16.0.0"
-  checksum: 9dd7457a2b88edba52975e012349c62aa1fc01d7550cb718bf950794797333b6b73356d2616f3fa28183d4cad630cfa3ce0210921a6033929558f9aa1b23116c
-  languageName: node
-  linkType: hard
-
 "react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -1916,6 +1933,16 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-webcam@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "react-webcam@npm:7.0.1"
+  peerDependencies:
+    react: ">=16.2.0"
+    react-dom: ">=16.2.0"
+  checksum: b1df32c3bfe3fafdb291b06266b30aa2ba88df2a51e04121fb09509feb88fb25fe3291733a9fb9674b56b964b6e69fe801f99e4fd20418520cd2e7641c46c647
   languageName: node
   linkType: hard
 
@@ -2225,6 +2252,13 @@ __metadata:
   version: 0.0.3
   resolution: "tr46@npm:0.0.3"
   checksum: 726321c5eaf41b5002e17ffbd1fb7245999a073e8979085dacd47c4b4e8068ff5777142fc6726d6ca1fd2ff16921b48788b87225cbc57c72636f6efa8efbffe3
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.4.0":
+  version: 2.4.0
+  resolution: "tslib@npm:2.4.0"
+  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
   languageName: node
   linkType: hard
 
